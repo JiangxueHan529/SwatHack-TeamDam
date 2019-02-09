@@ -19,7 +19,7 @@
           <li><a href="damn2.html">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="form.html"><span class="glyphicon glyphicon-plus"></span> Submit Review</a></li>
         </ul>
       </div>
     </div>
@@ -33,9 +33,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container">
+<div class="well">
   <h3>Class Review Form</h3>
+
   <form action="/action_page.php">
+
+      <div class="CouseSelect">
+    <label for="sel1">Select a course to review:</label>
+    <select class="form-control" id="sel1">
+      <option>CMSC 106 - Introduction to Data Structures</option>
+      <option>POLS 171 - Introduction to Political Theory</option>
+      <option>SPAN 102 - Advanced Intermediate Spanish</option>
+
+    </select>
+  </div>
+
     <div class="form-group">
       <label for="classdifficulty">Course Difficulty</label>
       <label class="radio-inline">
@@ -57,17 +69,17 @@
 
 
     <div>
-      <label for="classpace">Course Pace</label>
+      <label for="classpace">Course Difficulty</label>
       <label class="radio-inline">
-        <input type="radio" name="optradio">1</label>
+        <input type="radio" name="optradio1">1</label>
       <label class="radio-inline">
-        <input type="radio" name="optradio">2</label>
+        <input type="radio" name="optradio1">2</label>
       <label class="radio-inline">
-        <input type="radio" name="optradio" checked>3</label>
+        <input type="radio" name="optradio1" checked>3</label>
       <label class="radio-inline">
-        <input type="radio" name="optradio">4</label>
+        <input type="radio" name="optradio1">4</label>
       <label class="radio-inline">
-        <input type="radio" name="optradio">5</label>
+        <input type="radio" name="optradio1">5</label>
 </div>
     <div class="form-group">
       <label for="comment">What was your general experience with the class?:</label>
